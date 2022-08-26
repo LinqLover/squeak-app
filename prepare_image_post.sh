@@ -84,7 +84,7 @@ if is_etoys; then
   download_and_prepare_additional_files_for_etoys
 fi
 
-prepare_locales
+#prepare_locales
 
 readonly IMAGE_NAME="${SQUEAK_VERSION}-${SQUEAK_UPDATE}-${IMAGE_BITS}bit"
 export_variable "IMAGE_NAME" "${IMAGE_NAME}"

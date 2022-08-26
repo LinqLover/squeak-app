@@ -16,13 +16,13 @@ download_and_extract_all_vms() {
       exit 1
     fi
 
-    download_and_extract_vm "macOS (x64)" "${VM_BASE}/${VM_MAC_X86}.zip" "${TMP_PATH}/${VM_MAC_X86}"
-    download_and_extract_vm "macOS (ARMv8)" "${VM_BASE}/${VM_MAC_ARM}.zip" "${TMP_PATH}/${VM_MAC_ARM}"
+    #download_and_extract_vm "macOS (x64)" "${VM_BASE}/${VM_MAC_X86}.zip" "${TMP_PATH}/${VM_MAC_X86}"
+    #download_and_extract_vm "macOS (ARMv8)" "${VM_BASE}/${VM_MAC_ARM}.zip" "${TMP_PATH}/${VM_MAC_ARM}"
     # unified binary will be constructed on-the-fly
     # download_and_extract_vm "macOS (unified)" "${VM_BASE}/${VM_MAC}.zip" "${TMP_PATH}/${VM_MAC}"
     download_and_extract_vm "Linux (x64)" "${VM_BASE}/${VM_LIN_X86}.zip" "${TMP_PATH}/${VM_LIN_X86}"
-    download_and_extract_vm "Linux (ARMv8)" "${VM_BASE}/${VM_LIN_ARM}.zip" "${TMP_PATH}/${VM_LIN_ARM}"
-    download_and_extract_vm "Windows (x64)" "${VM_BASE}/${VM_WIN_X86}.zip" "${TMP_PATH}/${VM_WIN_X86}"
+    #download_and_extract_vm "Linux (ARMv8)" "${VM_BASE}/${VM_LIN_ARM}.zip" "${TMP_PATH}/${VM_LIN_ARM}"
+    #download_and_extract_vm "Windows (x64)" "${VM_BASE}/${VM_WIN_X86}.zip" "${TMP_PATH}/${VM_WIN_X86}"
   else # 32-bit
 
     if [[ -z "${VERSION_VM_LINUX_ARM}" ]] || \
@@ -34,7 +34,7 @@ download_and_extract_all_vms() {
 
     download_and_extract_vm "Linux (x86)" "${VM_BASE}/${VM_LIN_X86}.zip" "${TMP_PATH}/${VM_LIN_X86}"
     download_and_extract_vm "Linux (ARMv6)" "${VM_BASE}/${VM_LIN_ARM}.zip" "${TMP_PATH}/${VM_LIN_ARM}"
-    download_and_extract_vm "Windows (x86)" "${VM_BASE}/${VM_WIN_X86}.zip" "${TMP_PATH}/${VM_WIN_X86}"    
+    download_and_extract_vm "Windows (x86)" "${VM_BASE}/${VM_WIN_X86}.zip" "${TMP_PATH}/${VM_WIN_X86}"
   fi
 
   end_group

@@ -17,7 +17,7 @@
 #           Marcel Taeumel, Hasso Plattner Institute, Potsdam, Germany
 ################################################################################
 
-set -o errexit
+set -xo errexit
 
 source "env_vars"
 source "helpers.sh"

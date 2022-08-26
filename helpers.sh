@@ -203,7 +203,9 @@ mkdir -p "${BUILD_PATH}" "${PRODUCT_PATH}" "${TMP_PATH}"
 
 # Communicate variables beyond a single action
 readonly GLOBAL_ENV="${TMP_PATH}/global-env"
+echo before import
 import_variables
+echo after import
 
 # Assure $RUNNER_OS if not invoked from within GitHub Actions
 if [[ -z "${RUNNER_OS}" ]]; then

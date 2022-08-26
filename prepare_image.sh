@@ -19,7 +19,7 @@
 #           Marcel Taeumel, Hasso Plattner Institute, Potsdam, Germany
 ################################################################################
 
-set -o errexit
+set -xo errexit
 
 [[ -z "${SMALLTALK_VERSION}" ]] && exit 2
 
@@ -72,4 +72,4 @@ print_info "...starting to build ${SMALLTALK_VERSION}..."
 
 prepare_platform_vm
 download_and_prepare_files
-prepare_image
+#prepare_image

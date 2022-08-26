@@ -33,10 +33,10 @@ export -f curl
 export -f brew
 
 # git clean -fdx
-# exec ./prepare_image.sh
+exec ./prepare_image.sh
 
-# export SMALLTALK_CI_HOME="../smalltalkCI"
-# exec ./test_image.sh
+#export SMALLTALK_CI_HOME="../smalltalkCI"
+exec ./test_image.sh
 
 # source "tmp/version.sh"
 # exec ./prepare_bundles.sh
