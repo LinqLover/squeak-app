@@ -112,7 +112,6 @@ jobs:
         uses: marceltaeumel/setup-smalltalkCI@marceltaeumel/install-path
         with:
           smalltalk-image: ${{ matrix.smalltalk }}
-          smalltalkCI-workspace: ${{ github.workspace }}
 
       - name: Run tests
         continue-on-error: true
